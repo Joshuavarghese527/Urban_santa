@@ -1,0 +1,1 @@
+UrbanSantaProject::Application.config.secret_key_base = '6b6986d6f9b2170add8287c10249ea32df30363a71813062f2f5dac6310b535e61389706ce9aeba341124d7efd4498707b164090f3bb9b6a683ffdbab625d201'
