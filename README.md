@@ -1,1 +1,3 @@
 # Urban_santa
+
+The Urban Santa Project was created because we believe that Christmas Day should be a special day for every child. Thousands of children live in group homes and orphanages throughout the United States. Unfortunately, for these children the spirit of the holidays does not bring toys and gifts, as it does for others. Our mission is to work with centers that specialize in delivering services to underprivileged children and to deliver individualized gifts to these young children on Christmas day.
