@@ -9,4 +9,3 @@
 //= require creative/creative
 //= require_self
 
-<script src="snowstorm.js"></script>
