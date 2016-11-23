@@ -2,27 +2,27 @@
     <div class="container-fluid">
         <div class="row no-gutter">
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag "creative/portfolio/10.jpg", class: "img-responsive", alt: "" %>
+               <a href="#" id="pop">
+                    <img id="imageresource" src="images/creative/portfolio/11.jpg" style="width: 400px; height: 264px;">
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+                <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/11.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+                <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/12.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+                <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/13.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+               <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/3.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
@@ -32,21 +32,48 @@
                 </a>
             </div>
              <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+                <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/8.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
              <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+                <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/9.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
+                <a href="#" id="pop">
                     <%= image_tag "creative/portfolio/1.jpg", class: "img-responsive", alt: "" %>
                 </a>
             </div>
         </div>
     </div>
+    <a href="#" id="pop">
+    <img id="imageresource" src="creative/portfolio/10.jpg" style="width: 400px; height: 264px;">
+</a>
+
+<!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+        <img src="" id="imagepreview" style="width: 400px; height: 264px;" >
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$("#pop").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});</script>
 </section>
 
