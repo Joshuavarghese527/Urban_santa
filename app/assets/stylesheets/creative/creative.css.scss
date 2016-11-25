@@ -23,17 +23,19 @@ hr {
 hr.light {
     border-color:  #ff0a0e;
 }
+.white:hover {
+    color:white;
+}
+
+.white:link {
+    color:white;
+}
 
 a {
-    color: white;
+    color: #ffffff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-}
-
-a:hover,
-a:focus {
-    color:  white;
 }
 
 h1,
